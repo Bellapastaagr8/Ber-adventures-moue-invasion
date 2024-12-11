@@ -1,0 +1,13 @@
+damage = 10;
+hurtsToTouch = true;
+destroyWhenTouched = false;
+explode = false;
+burnOnHit = 0;
+yPush = -20;
+xPush = 10;
+doesPoison = false;
+poisonDamage = 0;
+poisonTime = 0;
+moveType = AI.still;
+homing = false;
+stunTime = 0;

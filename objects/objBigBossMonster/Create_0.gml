@@ -1,0 +1,11 @@
+event_inherited();
+moveSpeedMax = 1.5;
+moveSpeed = 1;
+moveType = AI.agressive;
+grav = 1;
+clickRadius = ceil(sprite_width/2);
+damage = 30;
+hurtsToTouch = true;
+adBlockTesting = true;
+fat = 62;
+tall = -78;

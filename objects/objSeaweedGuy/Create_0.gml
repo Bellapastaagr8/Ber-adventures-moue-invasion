@@ -1,0 +1,26 @@
+event_inherited();
+damage = 200;
+thinkCDMax = 20;
+hurtsToTouch = true;
+explode = false;
+wakeUpDis = 100;
+destroyWhenTouched = false;
+grav = 0.3;
+moveSpeed = 2;
+jumpChanceOnThink = 0;
+tall = -11;
+fat = 15;
+head = tall;
+moveSpeedMax = 2;
+moveSpeedMin = 1;
+
+isHibernating = true;
+wakeWhenPlayerClose = true;
+moveType = AI.flyag;
+turnWhenBumpWallChance = 0;
+hurtsToTouch = true;
+turnWhenBumpFloorChance = 50;
+isFollower = true;
+moveSpeed = 10;
+thinkCDMax = 15;
+price = 1000;

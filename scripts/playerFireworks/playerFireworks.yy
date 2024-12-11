@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"playerFireworks",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"playerFireworks",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"findClosestRail",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"findClosestRail",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
