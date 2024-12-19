@@ -7,6 +7,7 @@ function enums(){
 		still,
 		bomb,
 		intimidatingIntimidated,
+		ghost,
 	}
 	enum States{
 		play,

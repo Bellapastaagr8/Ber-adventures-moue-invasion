@@ -7,6 +7,7 @@ if(HP < HPMax){
 	HP += HPHealTime;
 }
 if(openShop == true){
+	waterLevel = room_height;
 	instance_create_depth(0,0,-1000,objShopUpgrades)
 	openShop = false;
 	

@@ -76,13 +76,13 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"feeac441-5c12-47ea-a7f8-8a52e5bc9095","path":"sprites/imgYouLose/imgYouLose.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"529d512a-af90-4580-abce-a91f02921675","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b369a2f3-34c7-4adc-af3f-4aec3316435a","path":"sprites/imgYouLose/imgYouLose.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"89b0d35d-fe3c-47f9-90d9-dc5d558f8d6f","path":"sprites/imgYouLose/imgYouLose.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"732398c8-ff9c-4206-9aee-aabd2b8f8637","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6e8fd6f4-cb97-4bd1-9ba8-46df40259b62","path":"sprites/imgYouLose/imgYouLose.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b369a2f3-34c7-4adc-af3f-4aec3316435a","path":"sprites/imgYouLose/imgYouLose.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"749fcfbe-9015-4157-899d-7870e092bf09","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c559675a-4a66-4228-a468-a8cd7cbfd083","path":"sprites/imgYouLose/imgYouLose.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6e8fd6f4-cb97-4bd1-9ba8-46df40259b62","path":"sprites/imgYouLose/imgYouLose.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"fb475b4a-6c79-47a0-9d1d-403ee16d3a09","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

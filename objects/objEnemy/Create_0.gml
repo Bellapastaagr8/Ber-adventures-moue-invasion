@@ -1,5 +1,6 @@
 event_inherited()
 doesPoison = false;
+isGhost = false;
 poisonTime = 60*5;
 poisonTimeMax = poisonTime;
 poisonDamage = 2;
@@ -7,6 +8,7 @@ hurtsToTouch = false;
 destroyWhenTouched = false;
 destroyThis = false;
 doesShoot = false;
+ghost = false;
 shotType = objMaskedFlowerBullet;
 shotCDMax = 60 * 3;
 shotCDLow = 30;
