@@ -4,6 +4,7 @@ if(object_index == objPlayer){
 	player.onPlat = collision_point(a, b, objMovingPlatfomleft, true, true);
 	
 	if(player.onPlat != noone){
+//		show_debug_message("test 1 successful")
 		return true;
 	}
 }

@@ -5,6 +5,7 @@ for(var i=0; i<array_length(name); i++){
     show_debug_message(name[i] + "!");
 }
 stickDir = 1;
+difficulty = noone;
 room_speed = 60;
 HPHealTime = .001;
 poisonTime = 0;

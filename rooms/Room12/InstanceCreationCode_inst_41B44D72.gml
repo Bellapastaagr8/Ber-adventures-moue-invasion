@@ -1,0 +1,1 @@
+jumpChanceOnThink = 0;

@@ -62,9 +62,7 @@ if(sprite_index == imgStrengthPotionPerm){
 	player.armor += 5;
 	
 }
-if(value >= 1){
 	soundScript(Collectcoin)
-}
 instance_destroy();
 
 

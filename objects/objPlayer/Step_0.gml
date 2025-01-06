@@ -1,5 +1,5 @@
 playerInput();
-if(room == bossRoom){confused = false;}
+if(difficulty == Difficlulty.easy){confused = false;}
 if(openShop){
 	HP = HPMax;
 }
@@ -79,6 +79,7 @@ if(yPush != 0){
 if(onPlat != noone){
 
 	if(onPlat.object_index == objMovingPlatfomleft){
+//		show_debug_message("Test 2 successful")
 		xSpeed += onPlat.dir * onPlat.movespeed;
 	}
 
@@ -171,18 +172,13 @@ if(ySpeed < 0){
     }
 }
 if(xSpeed != 0){
-    if(xSpeed > 0){
-        dir = 1;
-    } else {
-        dir = -1;
-    }
- 
-    x += xSpeed;
-
-    while(collision_rectangle(x, y+tempHeight, x + (tempWidth * dir), y, objBlock1, true, true) ||
-		x < 0 || x > room_width){
-        x -= dir;
-		//show_debug_message(x)
+    dir = sign(xSpeed);
+    for(var i=0; i<abs(xSpeed); i++){
+        x += dir;
+        if(collision_rectangle(x, y+tempHeight, x + (tempWidth * dir), y, objBlock1, true, true) || x < 0 || x > room_width){
+            x -= dir;
+            break;
+        }
     }
 }
 playerSTICK();
