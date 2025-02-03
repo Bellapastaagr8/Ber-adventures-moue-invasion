@@ -1,7 +1,7 @@
 event_inherited()
 destroyWhenTouched = true;
 hurtsToTouch = true;
-damage = 15;
+damage = 10;
 moveType = "playerx";
 firstFrame = true;
 moveSpeed = 6;

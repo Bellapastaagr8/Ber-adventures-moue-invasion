@@ -216,7 +216,7 @@ if(wave > 0){
 			instance_create_depth(HP3_1.x,HP3_1.y,player.depth,objHealth10)
 		}
 		if(wave = 19){
-			floatyMessy("Moue King: Intermission! Player: what? Moue king: Break time! Player: can I kill them? Moue king: Excuse me?",room_width/2,300,c_black,300)
+			floatyMessy("Moue King: Intermission! Player: what? Moue king: Break time! Player: Can I kill them? Moue king: Excuse me?",room_width/2,300,c_black,300)
 			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objBallerina)
 			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objBallerina)
 			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objBallerina)

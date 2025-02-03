@@ -1,0 +1,1 @@
+pickCoin = objCoinFall25;

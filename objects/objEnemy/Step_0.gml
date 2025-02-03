@@ -132,7 +132,7 @@ if(xPush != 0){
 		if((pointInBlock(x,y-1) || pointInBlock(x,y+tall)
 		|| pointInBlock(x+fat*dir, y - 1)
 		|| pointInBlock(x+fat*dir, y + tall)
-		|| ((turnNotFall && !pointInBlock(x,y+1)))) && !ghost
+		or ((turnNotFall && (!pointInBlock(x,y+1) && (StandOnPlatform && !pointInPlatform(x, y+1))) ))) && !ghost
 	){
 		x-= getDir(xs);
 		blockingPlayer(-dir,0);

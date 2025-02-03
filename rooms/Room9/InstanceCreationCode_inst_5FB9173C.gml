@@ -1,0 +1,1 @@
+seekDis = room_width;

@@ -6,8 +6,8 @@
   "name":"objInvisibleBlackBlock",
   "overriddenProperties":[],
   "parent":{
-    "name":"gpSpecialBlocks",
-    "path":"folders/Objects/gpSpecialBlocks.yy",
+    "name":"gpFakeBlocks",
+    "path":"folders/Objects/gpFakeBlocks.yy",
   },
   "parentObjectId":null,
   "persistent":false,

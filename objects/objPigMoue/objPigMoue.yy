@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"objGhost",
+  "%Name":"objPigMoue",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objGhost",
+  "name":"objPigMoue",
   "overriddenProperties":[],
   "parent":{
-    "name":"gpAIs",
-    "path":"folders/Objects/gpAIs.yy",
+    "name":"Moue",
+    "path":"folders/Objects/gpAIs/Moue.yy",
   },
   "parentObjectId":{
-    "name":"objSpikes",
-    "path":"objects/objSpikes/objSpikes.yy",
+    "name":"objCocktailFrork",
+    "path":"objects/objCocktailFrork/objCocktailFrork.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"imgGhost",
-    "path":"sprites/imgGhost/imgGhost.yy",
+    "name":"imgPigMoue",
+    "path":"sprites/imgPigMoue/imgPigMoue.yy",
   },
   "spriteMaskId":null,
   "visible":true,

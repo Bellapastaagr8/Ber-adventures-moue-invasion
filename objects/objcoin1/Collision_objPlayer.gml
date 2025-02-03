@@ -1,6 +1,13 @@
 player.Money = player.Money + value;
 if(onlyOnce){
-ds_list_add(player.coinsTaken,x)
+	if(room != Room15){
+		ds_list_add(player.coinsTaken,x)
+	}
+	if(object_index == objMaxHP5 || object_index == objMaxHP10 || object_index == objMaxHP20 || object_index == objMaxHP1){
+		if(room == Room15){
+			ds_list_add(player.coinsTaken,x)
+		}
+	}
 }
 show_debug_message(ds_list_size(player.coinsTaken));
 if(sprite_index == imgIceCubeHealing){

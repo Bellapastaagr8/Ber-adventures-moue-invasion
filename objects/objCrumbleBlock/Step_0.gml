@@ -15,7 +15,7 @@ if(player.onBreakable == id){
 }
 
 
-//fall when totally damaged, also make player forger they stood on me
+//fall when totally damaged, also make player forget they stood on me
 if(damage >= damageMax){
     y += 20;
 	if(player.onBreakable == id){

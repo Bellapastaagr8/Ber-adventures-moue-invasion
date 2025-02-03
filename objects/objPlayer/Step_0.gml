@@ -174,9 +174,13 @@ if(ySpeed < 0){
 if(xSpeed != 0){
     dir = sign(xSpeed);
     for(var i=0; i<abs(xSpeed); i++){
-        x += dir;
-        if(collision_rectangle(x, y+tempHeight, x + (tempWidth * dir), y, objBlock1, true, true) || x < 0 || x > room_width){
-            x -= dir;
+        var moveBy = dir;
+        if(i + 1 > abs(xSpeed)){
+            moveBy = (abs(xSpeed) - floor(abs(xSpeed)) ) * dir;
+        }
+        x += moveBy;
+        if(collision_rectangle(x, y+tempHeight, x + (tempWidth * dir), y, objBlock1, true, true) or x < 0 or x > room_width){
+            x -= moveBy;
             break;
         }
     }
