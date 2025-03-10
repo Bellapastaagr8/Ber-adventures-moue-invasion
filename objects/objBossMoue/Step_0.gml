@@ -34,7 +34,6 @@ if(wave > 0){
 			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objBasicMoue)
 			instance_create_depth(lane3spawn1.x,lane3spawn1.y,player.depth,objTankMoue)
 			instance_create_depth(lane4spawn1.x,lane4spawn1.y,player.depth,objBasicMoue)
-			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objBoomBoomMoue)
 		}
 		if(wave = 3){
 			floatyMessy("Moue King:You're putting up a good fight against my Moue, but I can keep sending stronger ones... MORE MOUE! Player: You know, I don't actually see the difference between Moue and Mouse... Moue King: Moue are deadly, Mice are weak.",room_width/2,300,c_black,280)
@@ -241,7 +240,7 @@ if(wave > 0){
 			instance_create_depth(HP3_1.x,HP3_1.y,player.depth,objHealth10);
 		}
 		if(wave = 22){
-			floatyMessy("Moue King: One more break! Here you go. A potion that should help. Player: Help who? Moue King: You. Don't worry, I uphold the laws. I don't lie. Player: Great.",room_width/2,300,c_black,300)
+			floatyMessy("Moue King: Another more break! Here you go. A potion that should help. Player: Help who? Moue King: You. Don't worry, I uphold the laws. I don't lie. Player: Great.",room_width/2,300,c_black,300)
 			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objStrengthPotionPerm);
 			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20);
 			instance_create_depth(HP2_1.x,HP2_1.y,player.depth,objHealth10);
@@ -255,7 +254,7 @@ if(wave > 0){
 			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objHealth10);
 		}
 		if(wave = 24){
-			floatyMessy("Player: How many more waves? Moue King: one more after this one! Player: And then..? Moue King: You get the prize! Player: YEAH!!! Moue King: Woah, calm down...",room_width/2,300,c_black,300)
+			floatyMessy("Player: How many more waves? Moue King: one more after this one! Player: And then..? Moue King: You get the prize! Player: FINALLY!!! Moue King: Woah, calm down...",room_width/2,300,c_black,300)
 			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objNinjaMoue);
 			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objNinjaMoue);
 			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objNinjaMoue);

@@ -1,10 +1,16 @@
 player.Money = player.Money + value;
+with(objMoneyGiverBar){
+	coinsCollected+=other.value;
+}
+with(objCoinGiver){
+	coinsCollected+=other.value;
+}
 if(onlyOnce){
-	if(room != Room15){
+	if(room != Room15 && room != Room19){
 		ds_list_add(player.coinsTaken,x)
 	}
 	if(object_index == objMaxHP5 || object_index == objMaxHP10 || object_index == objMaxHP20 || object_index == objMaxHP1){
-		if(room == Room15){
+		if(room == Room15 || room == Room19){
 			ds_list_add(player.coinsTaken,x)
 		}
 	}
@@ -29,6 +35,10 @@ if(sprite_index == imgHealth10){
 	}else{
 		player.HP += 10;
 	}
+}
+if(sprite_index == imgMoneyGiver){
+	effect_create_depth(depth,ef_explosion,x,y,2,c_orange);
+	effect_create_depth(depth,ef_explosion,x,y,1,c_red);
 }
 if(sprite_index == imgHealth20){
 	if(player.HP >= player.HPMax-19){

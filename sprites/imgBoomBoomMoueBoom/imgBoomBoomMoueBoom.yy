@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"gpAIs",
-    "path":"folders/Sprites/gpAIs.yy",
+    "name":"gpMoue",
+    "path":"folders/Sprites/gpAIs/gpMoue.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

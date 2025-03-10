@@ -8,8 +8,8 @@
   "name":"objDeathBlock",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"gpTrapTypestuff",
+    "path":"folders/Objects/gpTrapTypestuff.yy",
   },
   "parentObjectId":{
     "name":"objSpikes",

@@ -158,6 +158,7 @@ if(ySpeed < 0){ yDir = -1; }
 var ys = ceil(ySpeed) + yPush;
 if(yPush != 0){
     xs = yPush;
+	yDir = sign(xs);
     if(yPush < 0){ yPush ++; }
     if(yPush > 0){ yPush --; }
 }

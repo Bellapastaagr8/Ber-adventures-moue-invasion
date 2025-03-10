@@ -6,8 +6,8 @@
   "name":"objTeleporterEnd",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"gpTpStuff",
+    "path":"folders/Objects/gpTpStuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

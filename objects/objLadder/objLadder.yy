@@ -6,8 +6,8 @@
   "name":"objLadder",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"gpClimb&MovingBlocks",
+    "path":"folders/Objects/gpClimb&MovingBlocks.yy",
   },
   "parentObjectId":null,
   "persistent":false,

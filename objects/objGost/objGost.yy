@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"imgGhost",
-    "path":"sprites/imgGhost/imgGhost.yy",
+    "name":"imgGost",
+    "path":"sprites/imgGost/imgGost.yy",
   },
   "spriteMaskId":null,
   "visible":true,
