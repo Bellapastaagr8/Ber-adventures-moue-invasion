@@ -29,7 +29,10 @@ if(hasCape){
 
 
 try{
-
+	if(zebraTime >= 1){
+		draw_set_alpha(zebraFade);
+		draw_sprite(imglines, 0, 0, 0);
+	}
 	if(!is_undefined(player.onBreakable)){
 		if(player.onBreakable != noone){
 			if(player.onBreakable.object_index == objZebraBlock){

@@ -3,7 +3,12 @@ if(player.y > room_height){
 
 	return true;
 }
-
+if(instance_number(objDrivableTruck) >= 1){
+	var t = instance_find(objDrivableTruck,0);
+	if(t.active && player.y > t.y-120){
+		return true;
+	}
+}
 if(pointInBlock(player.x, player.y + 1)){
 	return true;
 }

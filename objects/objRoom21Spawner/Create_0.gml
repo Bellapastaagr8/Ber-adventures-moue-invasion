@@ -1,0 +1,11 @@
+spawnTimer1 = 20;
+spawnTimerMax1 = spawnTimer1;
+spawnTimer2 = 40;
+spawnTimerMax2 = spawnTimer2;
+spawnTimer3 = 30;
+spawnTimerMax3 = spawnTimer3;
+spawnTimer4 = 36;
+spawnTimerMax4 = spawnTimer4;
+spawnTimer5 = 20;
+spawnTimerMax5 = spawnTimer5;
+spawns = [objCocktailFrorkUp,objHoppyMushroomUp,objMiniEvilLadybugUp,objHealth10Up,objKirbyUp];

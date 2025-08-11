@@ -6,8 +6,8 @@
   "name":"objBlock1transparent",
   "overriddenProperties":[],
   "parent":{
-    "name":"gpBasicBlocks",
-    "path":"folders/Objects/gpBasicBlocks.yy",
+    "name":"gpFakeBlocks",
+    "path":"folders/Objects/gpFakeBlocks.yy",
   },
   "parentObjectId":{
     "name":"objImageBlock1",

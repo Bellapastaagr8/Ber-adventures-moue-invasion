@@ -14,7 +14,7 @@ if(wave == 0){
 			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objBasicMoue)
 			instance_create_depth(lane3spawn1.x,lane3spawn1.y,player.depth,objBasicMoue)
 			instance_create_depth(lane4spawn1.x,lane4spawn1.y,player.depth,objBasicMoue)
-			instance_create_depth(lane5spawn1.x,lane5spawn1.y,player.depth,objNinjaMoue)
+			instance_create_depth(lane5spawn1.x,lane5spawn1.y,player.depth,objZebraMoue)
 			return;
 		}
 	}
@@ -34,10 +34,9 @@ if(wave > 0){
 			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objBasicMoue)
 			instance_create_depth(lane3spawn1.x,lane3spawn1.y,player.depth,objTankMoue)
 			instance_create_depth(lane4spawn1.x,lane4spawn1.y,player.depth,objBasicMoue)
-			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objBasicMoue)
 		}
 		if(wave = 3){
-			floatyMessy("Moue King:You're putting up a good fight against my Moue, but I can keep sending stronger ones... MORE MOUE! Player: You know, I don't actually see the difference between Moue and Mouse... Moue King: Moue are deadly, Mouse are weak.",room_width/2,300,c_black,280)
+			floatyMessy("Moue King:You're putting up a good fight against my Moue, but I can keep sending stronger ones... MORE MOUE! Player: You know, I don't actually see the difference between Moue and Mouse... Moue King: Moue are deadly, Mice are weak.",room_width/2,300,c_black,280)
 			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objBasicMoue)
 			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objBasicMoue)
 			instance_create_depth(lane3spawn1.x,lane3spawn1.y,player.depth,objTankMoue)
@@ -104,7 +103,14 @@ if(wave > 0){
 			instance_create_depth(lane3spawn1.x,lane3spawn1.y,player.depth,objTankMoue)
 			instance_create_depth(lane4spawn1.x,lane4spawn1.y,player.depth,objTankMoue)
 			instance_create_depth(lane4spawn1.x,lane4spawn1.y,player.depth,objTankMoue)
+			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20)
+			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20)
+			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20)
+			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20)
+			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20)
+			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20)
 			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objMaxHP20)
+			player.HP = player.HPMax;
 		}
 		if(wave = 9){
 			floatyMessy("Player: How many moue do you even have?!? Moue King: You'll know if you beat them all! ;)",room_width/2,300,c_black,300)
@@ -142,9 +148,10 @@ if(wave > 0){
 			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20)
 			instance_create_depth(HP2_1.x,HP2_1.y,player.depth,objHealth20)
 			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20)
+			soundScript(Beatboss);
 		}
 		if(wave = 11){
-			floatyMessy("Moue King: Okay! You've done ten waves! Heres your reward before 5 more waves. Player: How many Waves are there?",room_width/2,300,c_black,300)
+			floatyMessy("Moue King: Okay! You've done ten waves! Heres your reward before 10 more waves. Player: How many Waves even are there?",room_width/2,300,c_black,300)
 			instance_create_depth(armorSpawn1.x,armorSpawn1.y,player.depth,objHelmet)
 			instance_create_depth(lane5spawn1.x,lane5spawn1.y,player.depth,objBasicMoue)
 			player.HP = player.HPMax;
@@ -198,7 +205,78 @@ if(wave > 0){
 			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objBasicMoue)
 			instance_create_depth(HP2_1.x,HP2_1.y,player.depth,objHealth20)
 		}
-		if(wave=17){
+		if(wave = 17){
+			floatyMessy("Player: You gonna give me something new to fight soon? Moue king: Good timing! Heres the new moue.",room_width/2,300,c_black,300)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objMilitaryMoue)
+			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20)
+			instance_create_depth(HP2_1.x,HP2_1.y,player.depth,objHealth10)
+			instance_create_depth(HP3_1.x,HP3_1.y,player.depth,objHealth10)
+		}
+		if(wave = 18){
+			floatyMessy("Player: Okay, how can you even MAKE a bullet this big? AND HOW DOES IT COME OUT OF THAT TINY GUN?!? Moue King: I'll never tell! :x",room_width/2,300,c_black,300)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objMilitaryMoue)
+			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objMilitaryMoue)
+			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20)
+			instance_create_depth(HP2_1.x,HP2_1.y,player.depth,objHealth10)
+			instance_create_depth(HP3_1.x,HP3_1.y,player.depth,objHealth10)
+		}
+		if(wave = 19){
+			floatyMessy("Moue King: Intermission! Player: what? Moue king: Break time! Player: Can I kill them? Moue king: Excuse me?",room_width/2,300,c_black,300)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objBallerina)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objBallerina)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objBallerina)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objBallerina)
+			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20)
+			instance_create_depth(HP2_1.x,HP2_1.y,player.depth,objHealth10)
+			instance_create_depth(HP3_1.x,HP3_1.y,player.depth,objHealth10)
+		}
+		if(wave = 20){
+			floatyMessy("Moue King: You killed my best dancers! Player: Uh- sorry? Moue King: well you should be! >:(",room_width/2,300,c_black,300)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objNinjaMoue);
+			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objNinjaMoue);
+			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objTankMoue);
+			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objHealth10);
+		}
+		if(wave = 21){
+			floatyMessy("Moue King: I took your suggestion! Player: which one..? Moue King: Meet Sonic! 100.0! Player: 100? Um, I think it goes up to like 5.0. Not 100.0 or even 10.0. Moue King: Really? That's too bad.",room_width/2,300,c_black,300)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objSonicMoue);
+			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objHealth20);
+			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objMaxHP20);
+			instance_create_depth(HP2_1.x,HP2_1.y,player.depth,objHealth10);
+			instance_create_depth(HP3_1.x,HP3_1.y,player.depth,objHealth10);
+		}
+		if(wave = 22){
+			floatyMessy("Moue King: Another more break! Here you go. A potion that should help. Player: Help who? Moue King: You. Don't worry, I uphold the laws. I don't lie. Player: Great.",room_width/2,300,c_black,300)
+			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objStrengthPotionPerm);
+			instance_create_depth(HP1_1.x,HP1_1.y,player.depth,objHealth20);
+			instance_create_depth(HP2_1.x,HP2_1.y,player.depth,objHealth10);
+			instance_create_depth(HP3_1.x,HP3_1.y,player.depth,objHealth10);
+		}
+		if(wave = 23){
+			floatyMessy("Player: Hey, hang on... Your dancers were human! Moue King: Were they? Player: uh... Wait, really? Moue King: Yep! Player: wow...",room_width/2,300,c_black,300)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objNinjaMoue);
+			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objNinjaMoue);
+			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objTankMoue);
+			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objHealth10);
+		}
+		if(wave = 24){
+			floatyMessy("Player: How many more waves? Moue King: one more after this one! Player: And then..? Moue King: You get the prize! Player: FINALLY!!! Moue King: Woah, calm down...",room_width/2,300,c_black,300)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objNinjaMoue);
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objNinjaMoue);
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objNinjaMoue);
+		}
+		if(wave = 25){
+			floatyMessy("Moue King: Final boss! Player: Yay- oh my gosh its a dripping toxic waste thing omg omg omg... am i about to die? Moue King: ...maybe?",room_width/2,300,c_black,300)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objToxicMoueMiniBossToxicMoueMiniBoss);
+			instance_create_depth(HP2_1.x,HP2_1.y,player.depth,objHealth20);
+			instance_create_depth(HP3_1.x,HP3_1.y,player.depth,objHealth20);
+			instance_create_depth(lane5spawn1.x,lane5spawn1.y,player.depth,objStrengthPotionPerm);
+		}
+		if(wave = 26){
+			floatyMessy("Moue King: You won! Player: yay do I get the Prize? Moue King: yeah, just whack that trophy. Player: whack it? Moue King: Don't question it. It makes programming easier. Player: ...? Nevermind...",room_width/2,300,c_black,300);
+			instance_create_depth(lane5spawn1.x,lane5spawn1.y,player.depth,objTrophy);
+		}
+		if(wave=27){
 			noMoreWaves = true; 
 		}
 		

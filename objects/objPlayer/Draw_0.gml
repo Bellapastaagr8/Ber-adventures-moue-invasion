@@ -8,7 +8,8 @@ if(mechTime > 0){
 		c = choose(1,0);
 	}
 	draw_sprite_ext(imgMech, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, c);
-	
+}else if(orangeTime>0){
+	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_orange, image_alpha);	
 }else if(purSkin){
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, ww.co_deepPurple, image_alpha);
 }else{

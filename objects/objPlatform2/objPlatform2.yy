@@ -6,8 +6,8 @@
   "name":"objPlatform2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"gpPlatforms",
+    "path":"folders/Objects/gpPlatforms.yy",
   },
   "parentObjectId":{
     "name":"objPlatform1",

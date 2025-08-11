@@ -8,8 +8,8 @@
   "name":"objMilitaryMoue",
   "overriddenProperties":[],
   "parent":{
-    "name":"gpAIs",
-    "path":"folders/Objects/gpAIs.yy",
+    "name":"Moue",
+    "path":"folders/Objects/gpAIs/Moue.yy",
   },
   "parentObjectId":{
     "name":"objBasicMoue",

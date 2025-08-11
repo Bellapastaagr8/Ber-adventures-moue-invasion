@@ -18,6 +18,6 @@ function playerDead(){
 		player.HP = player.HPMax;
 //		room_goto(room);
 		poisonTime = 0;
-		instance_create_depth(0,0,depth-100,objDeadScreen)
+		instance_create_depth(0,0,depth-100,objDeadScreen);
 	}
 }

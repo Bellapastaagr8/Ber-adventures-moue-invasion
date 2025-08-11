@@ -1,3 +1,13 @@
+if(other.sprite_index == imgDeathBlock){
+	hurtTime = 0;
+}
+if(other.moveType == AI.bomb && other.sprite_index != imgExplosiveMoneyBag){
+	soundScript(Regularexplosion);
+}
+if(isInvisible = true && other.homing = true){
+	
+	instance_destroy(other)
+}
 if( mechTime > 0){
 	other.HP = 0;
 	return;
@@ -6,10 +16,11 @@ if(!other.hurtsToTouch){
 	
 	return;
 }
-
-
-
-if(hurtTime<1){
+if(hurtTime<1 && other.stunTime < 1){
+	if(other.isZebra){
+		zebraTime = zebraTimeMax;
+	}
+	soundScript(Playerhit);
 	var damger = other.damage;
 	if(armorHits > 0){
 		damger /= 2;
@@ -51,7 +62,7 @@ if(hurtTime<1){
         xPush = other.xPush; 
     }
 	
-	if( other.destroyWhenTouched == true && other.explode == true ){
+	if(other.destroyWhenTouched == true && other.explode == true){
 		effect_create_above(ef_explosion, x, y, choose(2, 2, 3), choose(c_orange));
 		effect_create_above(ef_cloud, x, y, choose(2, 2, 3), choose(c_gray));
 		effect_create_above(ef_smokeup, x, y, choose(2, 2, 3), choose(c_grey));

@@ -7,6 +7,11 @@ if(player.x > x){
 if(player.x<x){
 	dir = -1;
 }
+wolfTime--
+if(wolfTime <= 0){
+	instance_create_depth(x,y,depth,objSleepingWolf);
+	instance_destroy();
+}
 thinkCD--;
 if(thinkCD < 1){
 	thinkCD = thinkCDMax;
@@ -14,7 +19,7 @@ if(thinkCD < 1){
 	state = wolfState.stand;
 }
 //reset jumpsssssssssssssssssssss ____-__--'
-if(worfInBlock(1)){
+if(worfOnGround()){
 	if(ySpeed > 0){
 		ySpeed = 0;
 	}
@@ -29,6 +34,7 @@ if(y>player.y && jumps > 0){
 
 if(x < xTar){var xDir = 1}else{var xDir = -1}
 if(abs(x-xTar) > moveSpeed){
+	animationCD--
 	image_xscale = xDir;
 	for(var i = 0; i < moveSpeed; i++){
 		x+=xDir;
@@ -41,8 +47,14 @@ if(abs(x-xTar) > moveSpeed){
 if(ySpeed > 0){  var yDir = 1;} else {var yDir = -1;};
 for(var i = 0; i < abs(ySpeed); i++){
 	y+=yDir;
-	if(worfInBlock()){
-		y-=yDir;
-		break;
+	if(yDir<0){
+		if(worfInBlock()){
+			y-=yDir;
+			break;
+		}
+	}else{
+		if(worfOnGround()){
+			break;
+		}
 	}
 }

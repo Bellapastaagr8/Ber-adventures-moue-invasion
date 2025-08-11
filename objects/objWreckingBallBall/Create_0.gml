@@ -1,0 +1,10 @@
+target = player;
+orbitDistance = 264;
+orbitDistanceMax = orbitDistance;
+orbitSpeed = 4;
+angle = 0;
+dir = 1;
+time = 8;
+timeMax = time;
+goAway = false
+center = player.sprite_height/2;

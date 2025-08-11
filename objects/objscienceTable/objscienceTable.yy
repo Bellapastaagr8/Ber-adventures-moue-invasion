@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"objscienceTable",
+  "%Name":"objScienceTable",
   "eventList":[],
   "managed":true,
-  "name":"objscienceTable",
+  "name":"objScienceTable",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"gpPlatforms",
+    "path":"folders/Objects/gpPlatforms.yy",
   },
   "parentObjectId":{
     "name":"objPlatform1",

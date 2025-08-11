@@ -12,7 +12,10 @@
     "name":"gpMoneyandStuff",
     "path":"folders/Objects/gpMoneyandStuff.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objcoin1",
+    "path":"objects/objcoin1/objcoin1.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

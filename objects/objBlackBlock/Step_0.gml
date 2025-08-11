@@ -10,6 +10,7 @@ if(id == moveRightBlock || id == moveRightBlock2){
 	if(moveCoolDown <= 0){
 		x+= xSpeed/2;
 		x+= xSpeed/2;
+		x += ( player.Money / (2000) ) * 12;
 		moveCoolDown = moveCoolDownMax;
 	}
 } 

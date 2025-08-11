@@ -10,7 +10,7 @@ with(objEnemy){
 		return false;
 	}
 	var yy = y - floor(sprite_height/2);
-	var d = point_distance(x,yy,mouse_x,mouse_y);
+	var d = point_distance(x,yy,Cursor.x,Cursor.y);
 	if(d <= clickRadius){
 		player.state = "bribery";
 		player.removeNumber = "";

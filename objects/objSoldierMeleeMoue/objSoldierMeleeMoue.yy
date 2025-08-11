@@ -8,8 +8,8 @@
   "name":"objSoldierMeleeMoue",
   "overriddenProperties":[],
   "parent":{
-    "name":"gpAIs",
-    "path":"folders/Objects/gpAIs.yy",
+    "name":"Moue",
+    "path":"folders/Objects/gpAIs/Moue.yy",
   },
   "parentObjectId":{
     "name":"objBasicMoue",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"imgSoldierMelee",
-    "path":"sprites/imgSoldierMelee/imgSoldierMelee.yy",
+    "name":"imgMoueSoldierMelee",
+    "path":"sprites/imgMoueSoldierMelee/imgMoueSoldierMelee.yy",
   },
   "spriteMaskId":null,
   "visible":true,

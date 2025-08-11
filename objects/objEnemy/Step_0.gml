@@ -14,6 +14,16 @@ if(isHibernating && wakeWhenPlayerClose && point_distance(player.x,player.y,x,y)
 		sprite_index = imgSeaweedGuyAwake;
 	}
 }
+if(bombWake != noone && point_distance(player.x,player.y,x,y) < wakeUpDis){
+	if(sprite_index != bombWake){
+		destroyWhenTouched = true;
+		explode = true;
+		moveSpeed = 5;
+		moveSpeedMax = 10;
+		moveSpeedMin = 4;
+		sprite_index = bombWake;
+	}
+}
 if(isHibernating){
 	stunTime = 1;
 	if(sprite_index != imgSeaweedGuy){
@@ -119,11 +129,10 @@ if(xPush != 0){
 	for(var i = 0; i < abs(xs); i++){
 		x += getDir(xs);
 		blockingPlayer(dir,0);
-	
-		if(pointInBlock(x,y-1) || pointInBlock(x,y+tall)
+		if((pointInBlock(x,y-1) || pointInBlock(x,y+tall)
 		|| pointInBlock(x+fat*dir, y - 1)
 		|| pointInBlock(x+fat*dir, y + tall)
-		|| ((turnNotFall && !pointInBlock(x,y+1)))
+		or ((turnNotFall && (!pointInBlock(x,y+1) && (StandOnPlatform && !pointInPlatform(x, y+1))) ))) && !ghost
 	){
 		x-= getDir(xs);
 		blockingPlayer(-dir,0);
@@ -146,9 +155,10 @@ if(onGround){
 
 var yDir = 1;
 if(ySpeed < 0){ yDir = -1; }
-var ys = ySpeed + yPush;
+var ys = ceil(ySpeed) + yPush;
 if(yPush != 0){
     xs = yPush;
+	yDir = sign(xs);
     if(yPush < 0){ yPush ++; }
     if(yPush > 0){ yPush --; }
 }
@@ -216,5 +226,8 @@ if(backAndForth){
 	}
 }
 if(HP<1){
+	if(isMoue){
+		soundScript(deadMoue);
+	}
 	instance_destroy();
 }

@@ -8,8 +8,8 @@
   "name":"objLeavesOne",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"gpFakeBlocks",
+    "path":"folders/Objects/gpFakeBlocks.yy",
   },
   "parentObjectId":{
     "name":"objImageBlock1",

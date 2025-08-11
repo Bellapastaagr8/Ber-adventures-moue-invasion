@@ -1,5 +1,5 @@
 playerInput();
-if(room == bossRoom){confused = false;}
+if(difficulty == Difficlulty.easy){confused = false;}
 if(openShop){
 	HP = HPMax;
 }
@@ -7,6 +7,7 @@ if(HP < HPMax){
 	HP += HPHealTime;
 }
 if(openShop == true){
+	waterLevel = room_height;
 	instance_create_depth(0,0,-1000,objShopUpgrades)
 	openShop = false;
 	
@@ -34,6 +35,7 @@ if(pressedPause){
 	player.pressedPause = false;
 }
 if(player.HP<1){
+	soundScript(youDead);
 	state = States.dead;
 	gameOverTime = 180;
 }
@@ -54,7 +56,10 @@ try{
 		eSpeed += onBreakable.speedUpBy;
 	}
 }catch(e){};
-xSpeed = xIn * eSpeed
+if(donutSpeedTime > 0){
+	eSpeed += 10;
+}
+xSpeed = xIn * eSpeed;
 if(xIn != 0){stickDir = xIn}
 clickingOnMonsters();
 playerJumping();
@@ -77,6 +82,7 @@ if(yPush != 0){
 if(onPlat != noone){
 
 	if(onPlat.object_index == objMovingPlatfomleft){
+//		show_debug_message("Test 2 successful")
 		xSpeed += onPlat.dir * onPlat.movespeed;
 	}
 
@@ -169,18 +175,17 @@ if(ySpeed < 0){
     }
 }
 if(xSpeed != 0){
-    if(xSpeed > 0){
-        dir = 1;
-    } else {
-        dir = -1;
-    }
- 
-    x += xSpeed;
-
-    while(collision_rectangle(x, y+tempHeight, x + (tempWidth * dir), y, objBlock1, true, true) ||
-		x < 0 || x > room_width){
-        x -= dir;
-		//show_debug_message(x)
+    dir = sign(xSpeed);
+    for(var i=0; i<abs(xSpeed); i++){
+        var moveBy = dir;
+        if(i + 1 > abs(xSpeed)){
+            moveBy = (abs(xSpeed) - floor(abs(xSpeed)) ) * dir;
+        }
+        x += moveBy;
+        if(collision_rectangle(x, y+tempHeight, x + (tempWidth * dir), y, objBlock1, true, true) or x < 0 or x > room_width){
+            x -= moveBy;
+            break;
+        }
     }
 }
 playerSTICK();

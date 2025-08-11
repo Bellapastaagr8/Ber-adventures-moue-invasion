@@ -13,6 +13,7 @@ function pickName(){
 		"Zack",
 		"Addie",
 		"Addison",
+		"Ash",
 		"Andie",
 		"Andy",
 		"Hannah",
@@ -64,5 +65,7 @@ function pickName(){
 		"Hermione",
 		"Jon",
 		"Jonas",
+		"Chloe",
+		"Charles",
 	);
 }

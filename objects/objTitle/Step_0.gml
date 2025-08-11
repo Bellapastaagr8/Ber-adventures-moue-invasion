@@ -1,6 +1,8 @@
 if(player.clickMouse){
-	var xm = device_mouse_x_to_gui(0);
-	var ym = device_mouse_y_to_gui(0);
+//	var xm = device_mouse_x_to_gui(0);
+//	var ym = device_mouse_y_to_gui(0);
+	var xm = Cursor.x;
+	var ym = Cursor.y;
 	if(xm >= startButton.x && xm < startButton.x+startButton.sprite_width){
 		if(ym >= startButton.y && ym < startButton.y+startButton.sprite_height){
 			player.state = "play";
@@ -9,6 +11,7 @@ if(player.clickMouse){
 			instance_destroy(MediumButton);
 			instance_destroy(HardButton);
 			player.difficulty = difficulty;
+			musicScript();
 			instance_destroy()
 			return;
 		}

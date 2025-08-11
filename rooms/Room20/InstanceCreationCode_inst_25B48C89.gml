@@ -1,0 +1,2 @@
+turnNotFall = true;
+StandOnPlatform = true;

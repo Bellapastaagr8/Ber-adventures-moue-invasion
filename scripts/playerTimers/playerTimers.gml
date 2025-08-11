@@ -7,6 +7,18 @@ function playerTimers(){
 		coyoteTime--;
 	
 	}
+	
+	if(zebraTime>0){
+		zebraTime--;
+	}
+	
+	if(donutSpeedTime>0){
+		donutSpeedTime--;
+	}
+	
+	if(orangeTime>0){
+		orangeTime--;
+	}
 
 	if(hurtTime>0){
 		hurtTime--

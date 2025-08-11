@@ -7,3 +7,5 @@ image_xscale = 2;
 image_yscale = 2;
 moveSpeedMax = 10;
 moveSpeedMin = 8;
+HP = 10;
+HPMax = HP;

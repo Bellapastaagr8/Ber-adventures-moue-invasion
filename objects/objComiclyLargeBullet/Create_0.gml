@@ -1,5 +1,6 @@
 event_inherited();
-moveType = "playeryx";
+moveType = "playerHoming";
+homingTime = 60*3;
 damage = 20;
 
 
