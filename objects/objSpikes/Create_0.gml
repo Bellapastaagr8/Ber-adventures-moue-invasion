@@ -8,6 +8,3 @@ xPush = 10;
 doesPoison = false;
 poisonDamage = 0;
 poisonTime = 0;
-moveType = AI.still;
-homing = false;
-stunTime = 0;

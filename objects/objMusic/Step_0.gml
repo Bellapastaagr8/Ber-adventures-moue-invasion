@@ -5,12 +5,10 @@ if(player.clickMouse){
 		if(ym >= y && ym < y+sprite_height){
 			if(player.music = true){
 				player.music = false;
-				audio_stop_all();
 				image_index = 1;
 			}else{
 				player.music = true;
 				image_index = 0;
-				musicScript();
 			}
 		}
 	}

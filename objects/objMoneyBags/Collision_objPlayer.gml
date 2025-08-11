@@ -1,4 +1,6 @@
-event_inherited()
+player.Money = player.Money + value;
+instance_destroy();
+
 
 
 

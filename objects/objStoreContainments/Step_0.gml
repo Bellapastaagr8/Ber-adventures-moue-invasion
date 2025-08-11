@@ -2,7 +2,6 @@ if(selected == true && player.clickMouse == true && player.Money >= cost){
 	player.Money -= cost;
 	if(sprite_index == imgExitShopUpgrades){
         player.state = "play";
-		musicScript();
 		with(objShopUpgrades){ instance_destroy(); }
 		with(objStoreContainments){ instance_destroy(); }
 		with(objShopKeeperUpgrades){ instance_destroy(); }

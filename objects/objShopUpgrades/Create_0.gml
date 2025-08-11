@@ -1,7 +1,5 @@
- 
 camera_set_view_target(view_camera[0], id);
 player.state = "shop";
-musicScript();
 text = "";
 var s = instance_create_depth(1150, 660, depth-1, objStoreContainments);
 s.cost = 0;

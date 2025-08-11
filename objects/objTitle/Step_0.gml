@@ -9,7 +9,6 @@ if(player.clickMouse){
 			instance_destroy(MediumButton);
 			instance_destroy(HardButton);
 			player.difficulty = difficulty;
-			musicScript();
 			instance_destroy()
 			return;
 		}

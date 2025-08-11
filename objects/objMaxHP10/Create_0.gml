@@ -11,12 +11,10 @@ bounce = 0;
 spinOtherDir = -1;
 
 
-if(ds_list_find_index(player.coinsTaken,x) != -1){
-	instance_destroy();
-}
 
 
-onlyOnce = true;
+
+
 
 
 

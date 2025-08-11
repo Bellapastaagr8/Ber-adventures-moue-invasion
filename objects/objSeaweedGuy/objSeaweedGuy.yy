@@ -8,8 +8,8 @@
   "name":"objSeaweedGuy",
   "overriddenProperties":[],
   "parent":{
-    "name":"gpBasicBlocks",
-    "path":"folders/Objects/gpBasicBlocks.yy",
+    "name":"gpAIs",
+    "path":"folders/Objects/gpAIs.yy",
   },
   "parentObjectId":{
     "name":"objHoneyBlockMimic",

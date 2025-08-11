@@ -4,7 +4,6 @@ if(player.clickMouse){
 	if(xm >= continu.x && xm < continu.x+continu.sprite_width){
 		if(ym >= continu.y && ym < continu.y+continu.sprite_height){
 			player.state = "play";
-			musicScript();
 			instance_destroy(continu)
 			instance_destroy()
 			room_goto(room)

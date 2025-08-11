@@ -6,8 +6,8 @@
   "name":"objRockBottomGoThrough",
   "overriddenProperties":[],
   "parent":{
-    "name":"gpFakeBlocks",
-    "path":"folders/Objects/gpFakeBlocks.yy",
+    "name":"gpBasicBlocks",
+    "path":"folders/Objects/gpBasicBlocks.yy",
   },
   "parentObjectId":{
     "name":"objImageBlock1",

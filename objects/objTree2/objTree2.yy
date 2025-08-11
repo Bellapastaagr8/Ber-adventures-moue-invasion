@@ -6,8 +6,8 @@
   "name":"objTree2",
   "overriddenProperties":[],
   "parent":{
-    "name":"gpFakeBlocks",
-    "path":"folders/Objects/gpFakeBlocks.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

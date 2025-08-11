@@ -1,11 +1,10 @@
 show_debug_message("Hello Nice to meet you I like making houses(The little ones)");
 name = ["A", "U", "D", "R", "E", "Y", "", "I", "S", "", "M", "Y", "", "N", "A", "M", "E"];
-coinsTaken = ds_list_create();
+
 for(var i=0; i<array_length(name); i++){
     show_debug_message(name[i] + "!");
 }
 stickDir = 1;
-difficulty = noone;
 room_speed = 60;
 HPHealTime = .001;
 poisonTime = 0;
@@ -105,5 +104,5 @@ efPartOne = false;
 mechTime = 0;
 mechTimeMax = 60*60;
 instance_create_depth(0,0,depth-1,objTitle);
-musicScript();
+
 playerInput();

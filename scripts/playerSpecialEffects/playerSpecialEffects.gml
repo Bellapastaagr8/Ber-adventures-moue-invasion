@@ -14,7 +14,6 @@ function playerSpecialEffects(){
 	}
 	if(waterLevel<y && efPartOne && !efPartOneLast){
 	repeat(30){
-		soundScript(Splash)
 		instance_create_depth(irandom_range(x+100,x-100), irandom_range(y-20,y-70),depth,effWaterDroplet,)
 	}
 }

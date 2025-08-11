@@ -6,7 +6,7 @@ function blockingPlayer(a,b){
 			if(playerInBlock()){
 				player.x -= a;
 				player.y -= b;
-				player.onBreakable = noone;
+				player.onBreakable = noone
 			}
 		}
 	}
