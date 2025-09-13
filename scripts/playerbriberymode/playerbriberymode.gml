@@ -6,7 +6,7 @@ function playerbriberymode(){
 		player.state = "play";
 		return;
 	}
-	instance_create_depth(Cursor.x,Cursor.y,depth,effCoin)
+	instance_create_depth(Cursor.x , Cursor.y ,depth,effCoin)
 	var adjustmentAmount = 0;
 	if(player.xIn >0){
 		adjustmentAmount = 1;

@@ -72,11 +72,18 @@ if(keyboard_check_pressed(vk_backspace)){ pressedNumber = "-";}
 
 holdingJump = keyboard_check(vk_space) or gamepad_button_check(gamepadID, gp_face1);
 pressedJump = keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(gamepadID, gp_face1);
-pressedEnter = keyboard_check_pressed(vk_enter);
-clickMouse = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(gamepadID,gp_shoulderr || gamepad_button_check_pressed(gamepadID,gp_shoulderl));
+pressedEnter = keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(gamepadID, gp_start);
+clickMouse = mouse_check_button_pressed(mb_left) || 
+		gamepad_button_check_pressed(gamepadID,gp_shoulderr) || 
+		gamepad_button_check_pressed(gamepadID,gp_shoulderrb) || 
+		gamepad_button_check_pressed(gamepadID,gp_shoulderl);
 clickRightMouse = mouse_check_button_pressed(mb_right);
 pressedPause = keyboard_check_pressed(vk_escape);
 pressedDebug = keyboard_check_pressed(ord("K"))
 killEnemy = keyboard_check_pressed(ord("M"))
+
+pressedStick = (keyboard_check_pressed(ord("E")) or gamepad_button_check(gamepadID, gp_face3));
 }
+
+
 

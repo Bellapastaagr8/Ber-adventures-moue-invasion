@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"blockingPlayer",
   "isCompatibility":false,
   "isDnD":false,

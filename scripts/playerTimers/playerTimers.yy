@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"playerTimers",
   "isCompatibility":false,
   "isDnD":false,

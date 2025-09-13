@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"worfOnGround",
   "isCompatibility":false,
   "isDnD":false,

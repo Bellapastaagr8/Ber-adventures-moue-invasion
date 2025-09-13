@@ -1,9 +1,9 @@
-if(player.clickMouse){
+if(player.clickMouse or player.pressedEnter){
 //	var xm = device_mouse_x_to_gui(0);
 //	var ym = device_mouse_y_to_gui(0);
-	var xm = Cursor.x;
-	var ym = Cursor.y;
-	if(xm >= startButton.x && xm < startButton.x+startButton.sprite_width){
+	var xm = Cursor.x - camera_get_view_x(view_camera[0]);
+	var ym = Cursor.y - camera_get_view_y(view_camera[0]);
+	if((player.pressedEnter) or xm >= startButton.x && xm < startButton.x+startButton.sprite_width){
 		if(ym >= startButton.y && ym < startButton.y+startButton.sprite_height){
 			player.state = "play";
 			instance_destroy(startButton);
@@ -16,7 +16,7 @@ if(player.clickMouse){
 			return;
 		}
 	}	
-	if(xm >= EasyButton.x && xm < EasyButton.x+EasyButton.sprite_width){
+	if((player.pressedEnter) or xm >= EasyButton.x && xm < EasyButton.x+EasyButton.sprite_width){
 		if(ym >= EasyButton.y && ym < EasyButton.y+EasyButton.sprite_height){
 			difficulty = Difficlulty.easy;
 			player.Money = 500;

@@ -10,8 +10,13 @@ with(objEnemy){
 		return false;
 	}
 	var yy = y - floor(sprite_height/2);
+	//var xm = Cursor.x - camera_get_view_x(view_camera[0]);
+	//var ym = Cursor.y - camera_get_view_y(view_camera[0]);
 	var d = point_distance(x,yy,Cursor.x,Cursor.y);
-	if(d <= clickRadius){
+	var cr = clickRadius;
+	if(player.difficulty == Difficlulty.easy){ cr += 20; }
+	if(player.difficulty == Difficlulty.medium){ cr += 10; }
+	if(d <= cr){
 		player.state = "bribery";
 		player.removeNumber = "";
 //		instance_destroy();

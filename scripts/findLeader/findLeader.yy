@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"findLeader",
   "isCompatibility":false,
   "isDnD":false,

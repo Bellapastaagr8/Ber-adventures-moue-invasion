@@ -1,4 +1,11 @@
-if(selected == true && player.clickMouse == true && player.Money >= cost){
+if(collision_point(Cursor.x, Cursor.y, id, true, false)){
+	selected = true;
+} else {
+	selected = false;
+}
+if( (selected == true && player.clickMouse == true && player.Money >= cost) 
+	or (sprite_index == imgExitShopUpgrades && player.pressedEnter)
+	){
 	player.Money -= cost;
 	if(sprite_index == imgExitShopUpgrades){
         player.state = "play";
