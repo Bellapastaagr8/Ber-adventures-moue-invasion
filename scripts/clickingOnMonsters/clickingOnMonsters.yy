@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"clickingOnMonsters",
   "isCompatibility":false,
   "isDnD":false,

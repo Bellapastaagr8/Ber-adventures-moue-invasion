@@ -1,4 +1,5 @@
 if(player.state != "play"){ return; }
+if(ready == false){ return; }
 
 //if we don't have a nextrail set, find one
 if(nextRail == noone){
@@ -19,7 +20,6 @@ if(nextRail == noone){
     ySpeed = sin(angle) * moveSpeed;
 
 }
-
 
 
 

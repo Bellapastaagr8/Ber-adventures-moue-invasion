@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"playerEnterRoom",
   "isCompatibility":false,
   "isDnD":false,

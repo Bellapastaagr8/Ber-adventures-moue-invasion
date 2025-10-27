@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"playerbriberymode",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"worfInBlock",
   "isCompatibility":false,
   "isDnD":false,

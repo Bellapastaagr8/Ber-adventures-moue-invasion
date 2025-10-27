@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"floatyMessy",
   "isCompatibility":false,
   "isDnD":false,

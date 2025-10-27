@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"playerSpecialEffects",
   "isCompatibility":false,
   "isDnD":false,

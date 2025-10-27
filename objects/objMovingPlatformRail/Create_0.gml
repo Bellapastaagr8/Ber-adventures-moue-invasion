@@ -5,5 +5,5 @@ moveSpeed = 2;
 
 lastRail = [];
 seekDis = 70;
-
+ready = true;
 skipFirstRail = choose(true, false);

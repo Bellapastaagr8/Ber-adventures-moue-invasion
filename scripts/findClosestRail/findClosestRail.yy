@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"findClosestRail",
   "isCompatibility":false,
   "isDnD":false,
