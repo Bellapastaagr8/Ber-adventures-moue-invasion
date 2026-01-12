@@ -31,6 +31,15 @@ if( (selected == true && player.clickMouse == true && player.Money >= cost)
 	if(sprite_index == imgSpeechBubbleStore){
 		player.invisibleEnergy = player.invisibleEnergyMax;
 	}
+	if(sprite_index == imgPresent){
+		player.getPresent = true;
+	}
+	if(sprite_index == imgGoldStatueTiny){
+		player.hasMoueTrophy = true;
+	}
+	if(sprite_index == imgTinyCouchBox){
+		player.CouchBox = true;
+	}
 	
 	if(sprite_index == imgPotionOfHigherJumping){
 		player.jumpPower -= 1;

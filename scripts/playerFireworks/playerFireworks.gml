@@ -2,7 +2,7 @@ function playerFireworks(){
 	if(player.state == "next_room"){
 		isInvisible = false;
 		onPlat = noone;
-		onBreakable = noone
+		onBreakable = noone;
 	    if(fireworksTime > 0){
 	        fireworksTime --;
 	        if(fireworksTime % 3 == 0){

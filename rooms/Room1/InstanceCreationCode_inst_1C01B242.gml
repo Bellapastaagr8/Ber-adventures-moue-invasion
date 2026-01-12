@@ -1,1 +1,1 @@
-next_room = Room26;
+next_room = Room30;

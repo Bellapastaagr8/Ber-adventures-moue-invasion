@@ -14,7 +14,6 @@ if(wave == 0){
 			instance_create_depth(lane2spawn1.x,lane2spawn1.y,player.depth,objBasicMoue)
 			instance_create_depth(lane3spawn1.x,lane3spawn1.y,player.depth,objBasicMoue)
 			instance_create_depth(lane4spawn1.x,lane4spawn1.y,player.depth,objBasicMoue)
-			instance_create_depth(lane5spawn1.x,lane5spawn1.y,player.depth,objZebraMoue)
 			return;
 		}
 	}
@@ -273,10 +272,20 @@ if(wave > 0){
 			instance_create_depth(lane5spawn1.x,lane5spawn1.y,player.depth,objStrengthPotionPerm);
 		}
 		if(wave = 26){
+			floatyMessy("Player: Wait, what? I thought we were done! Moue King: We were. But I had an extra moue who really wanted a chance to fight.",room_width/2,300,c_black,300)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objZebraMoue);
+			instance_create_depth(HP2_1.x,HP2_1.y,player.depth,objHealth20);
+			instance_create_depth(HP3_1.x,HP3_1.y,player.depth,objHealth20);
+		}
+		if(wave = 27){
+			floatyMessy("Moue King: Look what you did. You crushed her dreams. She's dead. She had family. Player: SHE WANTED ME DEAD",room_width/2,300,c_black,300)
+			instance_create_depth(lane1spawn1.x,lane1spawn1.y,player.depth,objMilitaryMoue);
+		}
+		if(wave = 28){
 			floatyMessy("Moue King: You won! Player: yay do I get the Prize? Moue King: yeah, just whack that trophy. Player: whack it? Moue King: Don't question it. It makes programming easier. Player: ...? Nevermind...",room_width/2,300,c_black,300);
 			instance_create_depth(lane5spawn1.x,lane5spawn1.y,player.depth,objTrophy);
 		}
-		if(wave=27){
+		if(wave=29){
 			noMoreWaves = true; 
 		}
 		

@@ -81,4 +81,28 @@ s.sprite_index = imgPotionOfQuickerRunning;
 s.image_xscale = 3; s.image_yscale = 3;
 s.priceMod = -75;
 
+if(!player.getPresent){
+	s = instance_create_depth(1273, 249, depth-1, objStoreContainments);
+	s.cost = 50;
+	s.desc = "A gift! Don't open it until the end...";
+	s.sprite_index = imgPresent;
+	s.image_xscale = 3; s.image_yscale = 3;
+	s.priceMod = -75;
+}
+if(!player.hasMoueTrophy){
+	s = instance_create_depth(1181, 249, depth-1, objStoreContainments);
+	s.cost = 50;
+	s.desc = "A trophy of a mouse... Or was it a moue?";
+	s.sprite_index = imgGoldStatueTiny;
+	s.image_xscale = 3; s.image_yscale = 3;
+	s.priceMod = -75;
+}
+if(!player.CouchBox){
+	s = instance_create_depth(1263, 327, depth-1, objStoreContainments);
+	s.cost = 50;
+	s.desc = "A box! There's supposed to be a chair in there...";
+	s.sprite_index = imgTinyCouchBox;
+	s.image_xscale = 3; s.image_yscale = 3;
+	s.priceMod = -75;
+}
 s = instance_create_depth(121+323+600-89, 435+18+3, depth-1, objShopKeeperUpgrades);

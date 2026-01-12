@@ -35,6 +35,8 @@ if(pressedPause){
 	player.pressedPause = false;
 }
 if(player.HP<1){
+	deaths++;
+	show_debug_message(deaths);
 	soundScript(youDead);
 	state = States.dead;
 	gameOverTime = 180;

@@ -44,8 +44,8 @@ if(nextRail != noone && skipFirstRail){
 
 
 //movement
-x += xSpeed;
-y += ySpeed;
+x += xSpeed*speedUpBy;
+y += ySpeed*speedUpBy;
 if(player.onPlat == id){
     player.x += xSpeed;
     player.y += ySpeed;

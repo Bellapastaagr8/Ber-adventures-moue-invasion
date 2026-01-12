@@ -41,6 +41,9 @@ if(hurtTime<1 && other.stunTime < 1){
 	HP-= damger;
 	yPush = other.yPush;
 	
+	if(other.sprite_index == imgPaddedSpike){
+		hurtTime = 5;
+	}
 	if(other.doesPoison){
 		poisonTime = other.poisonTime;
 		poisonDamage = other.poisonDamage;

@@ -38,7 +38,7 @@ function playerbriberymode(){
 	}
 	if((player.pressedEnter || player.pressedJump) && player.removeNumber != ""){
 		var cost = real(player.removeNumber);
-		show_debug_message(cost)
+//		show_debug_message(cost)
 		if(cost <= player.Money){
 			player.Money -= cost;
 			bribeMonster.price -= cost;
