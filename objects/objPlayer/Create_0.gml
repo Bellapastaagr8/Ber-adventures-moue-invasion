@@ -4,7 +4,9 @@ coinsTaken = ds_list_create();
 for(var i=0; i<array_length(name); i++){
     show_debug_message(name[i] + "!");
 }
-deaths = 1000;
+deaths = 0;
+volume = 1;
+audioX = noone;
 player.rXIn = 0;
 player.rYIn = 0;
 stickDir = 1;
@@ -12,6 +14,7 @@ difficulty = noone;
 getPresent = false;
 hasMoueTrophy = false;
 room_speed = 60;
+holdingMouse = false;
 win = false;
 HPHealTime = .001;
 poisonTime = 0;

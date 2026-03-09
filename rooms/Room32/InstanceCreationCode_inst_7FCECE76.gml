@@ -1,0 +1,1 @@
+thinkCDMax = 60;

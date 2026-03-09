@@ -6,7 +6,6 @@ if(player.mouseMoved){
 	y += (player.rYIn*5);
 }
 
-
 if(x<camera_get_view_x(view_camera[0])){
 	x=camera_get_view_x(view_camera[0]);
 }

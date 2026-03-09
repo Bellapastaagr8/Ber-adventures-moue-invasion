@@ -1,4 +1,5 @@
 playerInput();
+audio_master_gain(volume)
 if(difficulty == Difficlulty.easy){confused = false;}
 if(openShop){
 	HP = HPMax;

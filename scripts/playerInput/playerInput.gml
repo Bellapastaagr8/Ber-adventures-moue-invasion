@@ -77,6 +77,10 @@ clickMouse = mouse_check_button_pressed(mb_left) ||
 		gamepad_button_check_pressed(gamepadID,gp_shoulderr) || 
 		gamepad_button_check_pressed(gamepadID,gp_shoulderrb) || 
 		gamepad_button_check_pressed(gamepadID,gp_shoulderl);
+holdingMouse = mouse_check_button(mb_left) or 
+        gamepad_button_check(gamepadID,gp_shoulderr) or 
+        gamepad_button_check(gamepadID,gp_shoulderrb) or 
+        gamepad_button_check(gamepadID,gp_shoulderl);
 clickRightMouse = mouse_check_button_pressed(mb_right);
 pressedPause = keyboard_check_pressed(vk_escape);
 pressedDebug = keyboard_check_pressed(ord("K"))
